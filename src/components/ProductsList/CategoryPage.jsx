@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 import ProductCard from "./ProductCard";
-import {
-  Container,
-  CategoryContainer,
-  CategoryName,
-} from "../../Style/ProductsStyle";
+import { Container, CategoryContainer, CategoryName } from "./ProductsStyle";
 import ProductPage from "./ProductPage";
 
 export default class CategoryPage extends Component {

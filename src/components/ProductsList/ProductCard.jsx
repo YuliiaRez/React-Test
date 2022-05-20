@@ -1,21 +1,17 @@
 import React, { Component } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   ProductContainer,
   Name,
   Price,
   Img,
-  TextOutOfStock,
+  OutOfStock,
   CartIcon,
-} from "../../Style/ProductsStyle";
+} from "./ProductsStyle";
 import GreenCartIcon from "../../images/GreenCartIcon.svg";
 
 export default class ProductCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const {
       product,
@@ -34,7 +30,7 @@ export default class ProductCard extends Component {
         />
       );
     } else {
-      stock = <TextOutOfStock>OUT OF STOCK</TextOutOfStock>;
+      stock = <OutOfStock>OUT OF STOCK</OutOfStock>;
     }
 
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { gql } from "@apollo/client";
 import { client } from "../client";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { GET_ALL_PRODUCTS, GET_ALL_CURRENCIES } from "../query";
 import { Container } from "./HomePageStyled";
@@ -10,7 +10,6 @@ import Navbar from "../components/Navbar/Navbar";
 import CategoryPage from "../components/ProductsList/CategoryPage";
 import CartPage from "../components/Cart/CartPage";
 import CartMini from "../components/Cart/CartMini";
-import ProductPage from "../components/ProductsList/ProductPage";
 
 export default class HomePage extends Component {
   constructor(props) {

@@ -31,7 +31,6 @@ export default class ItemCartPage extends Component {
   }
   sliderOnclick = (direction, item) => {
     let indexImg = this.state.indexOfPage;
-    const productsInCart = this.props.productsInCart;
     if (direction === "next") {
       indexImg = indexImg > 0 ? indexImg - 1 : item.gallery.length - 1;
     }
@@ -54,10 +53,6 @@ export default class ItemCartPage extends Component {
     const { sliderOnclick } = this;
     const { indexOfPage } = this.state;
     const { attributes, attrs } = item;
-    const [symbol] = this.props.currentCurrensyType.split(" ");
-    // const [currPrice] = this.props.item.prices.filter(
-    //   (it) => it.currency.symbol === symbol
-    // );
 
     return (
       <ContentPlacement>

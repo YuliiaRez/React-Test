@@ -17,9 +17,6 @@ import {
 import CurrenciesSelect from "../CurrenciesSelect/CurrenciesSelect";
 
 export default class Navbar extends Component {
-  constructor(props) {
-    super(props);
-  }
   getCategoriesNames = () => {
     const categoriesNames = [];
     const { productsWithCategory } = this.props;
@@ -42,7 +39,6 @@ export default class Navbar extends Component {
       productsInCart,
       getIdClickedProductCard,
       setTotalPriceOfCart,
-      setIsCartPageOpened,
     } = this.props;
     const categoriesNames = this.getCategoriesNames();
     return (

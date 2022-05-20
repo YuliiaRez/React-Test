@@ -55,12 +55,10 @@ export default class ProductPage extends Component {
     const { productCardClicked, currentCurrensyType, addProductsToCart } =
       this.props;
 
-    const { gallery, brand, name, attributes, inStock, id } =
-      productCardClicked;
+    const { gallery, brand, name, attributes, inStock } = productCardClicked;
     const description = this.transformDescription();
 
-    const { currentImage, productWithAttributesForCart, attrSelected } =
-      this.state;
+    const { currentImage, attrSelected } = this.state;
     const [symbol] = currentCurrensyType.split(" ");
 
     return (

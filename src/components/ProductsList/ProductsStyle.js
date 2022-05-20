@@ -104,7 +104,7 @@ export const Img = styled.img`
   margin-bottom: 20px;
 `;
 
-export const TextOutOfStock = styled.div`
+export const OutOfStock = styled.div`
  position: absolute;
   top: 30%;
   left: 50%;

@@ -29,10 +29,7 @@ export default class ItemCartMini extends Component {
       decreaseItemCounter,
     } = this.props;
     const { attributes, attrs } = item;
-    const [symbol] = this.props.currentCurrensyType.split(" ");
-    // const [currPrice] = this.props.item.prices.filter(
-    //   (it) => it.currency.symbol === symbol
-    // );
+
     return (
       <CartContent>
         <ProductInfoInCart>
